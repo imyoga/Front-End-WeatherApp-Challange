@@ -6,6 +6,7 @@ Your challenge is to build a responsive microsite that display the weather forec
 - `Securtiy is very critical. No one should be able to see the API key from dev tools. Source code must be hidden, too.`
 
 - Has a simple onboarding screen that will trigger the weather forecast base on the geolocation API of the browser.
+  - if user don't allow for the geolocation, display the weather of the toronto.
 - Provide an user input where the user can change the location. User should get some suggestions based on current input of user.
 - Forecasts for: today, tomorrow and the day after tomorrow should be shown.
 - For temperatures below 15ºC, blue color should be used, for temperatures above 35ºC, red should be used and yellow should be used for other temperatures.
