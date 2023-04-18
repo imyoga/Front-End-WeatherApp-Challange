@@ -3,25 +3,25 @@
 Your challenge is to build a responsive microsite that display the weather forecast at the locations given in the white text box.
 
 ## Functional requirements
+- `Securtiy is very critical. No one should be able to see the API key from dev tools. Source code must be hidden, too.`
 
 - Has a simple onboarding screen that will trigger the weather forecast base on the geolocation API of the browser.
-- Provide an user input where the user can change the location.
+- Provide an user input where the user can change the location. User should get some suggestions based on current input of user.
 - Forecasts for: today, tomorrow and the day after tomorrow should be shown.
 - For temperatures below 15ºC, blue color should be used, for temperatures above 35ºC, red should be used and yellow should be used for other temperatures.
-- When there is no chosen location, gray should be used . If the user clicks on any temperature, the temperatures should be changed from Celsius to Fahrenheit or from Fahrenheit to Celsius.
+- When there is no chosen location, gray should be used. 
+- If the user clicks on any temperature, the temperatures should be changed from Celsius to Fahrenheit or from Fahrenheit to Celsius.
 - The color defined here can be use for the text color or the background, be creative.
 - Components should flexible enough to display the day above or under the temperature.
+
+* Localization: support for multiple languages (English, French, ...)
+* Backend: proxy the request, handle better the quota (cache?)
+* Features: any extra features, you think use full for the user
 
 ## Non-functional requirements
 
 - Challenge is submitted as pull request against this repo ([fork it](https://help.github.com/articles/fork-a-repo/) and [create a pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)).
 - The microsite should be deployed and usable.
-
-### Bonus
-
-* Localization: support for multiple languages (English, French, ...)
-* Backend: proxy the request, handle better the quota (cache?)
-* Features: any extra features, you think use full for the user
 
 ### Remarks
 
@@ -43,7 +43,9 @@ Your challenge is to build a responsive microsite that display the weather forec
 ## Supporting API
 
 - To consult the weather forecast, you can use [OpenWeather](https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid=b81cd1a66eaee287ea9830aa66250511) using the API key `b81cd1a66eaee287ea9830aa66250511`. If necessary, create a new account.
+
 - To convert latitude and longitude to a location use [OpenCage](https://api.opencagedata.com/geocode/v1/json?q=%7B%7Blatitude%7D%7D,%7B%7Blongitude%7D%7D&key=066c930b1b9f4d9bb89733fb93e9827b&language=en) using the API key `066c930b1b9f4d9bb89733fb93e9827b`. If necessary, create a new account.
+
 
 
 # Evaluation criteria
